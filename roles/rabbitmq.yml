@@ -1,5 +1,0 @@
-- name: setup rabbitmq
-  hosts: all
-  become: yes
-  roles:
-    - rabbitmq
