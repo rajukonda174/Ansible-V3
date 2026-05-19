@@ -3,8 +3,10 @@
     name: common
     tasks_from: golang.yml
 
-- name: Load pre requisites
-  ansible.builtin.include_tasks: mysql-schema.yml
+- name: install mysql
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: mysql-schema.yml
 
 - name: Load Master Data
   ansible.builtin.shell: mysql -h 10.0.0.11 -u root -pRoboShop@1 {{ component }} < db/master-data.sql
