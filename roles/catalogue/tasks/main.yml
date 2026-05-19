@@ -9,6 +9,6 @@
     tasks_from: mysql-schema.yml
 
 - name: Load Master Data
-  ansible.builtin.shell: mysql -h 10.0.0.11 -u root -pRoboShop@1 {{ component }} < db/master-data.sql
+  ansible.builtin.shell: mysql -h 10.0.0.11 -u root -pRoboShop@1 {{ component_name }} < db/master-data.sql
   args:
      chdir: /app
