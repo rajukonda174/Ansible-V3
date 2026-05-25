@@ -3,5 +3,7 @@
     name: common
     tasks_from: java.yml
 
-- name: Load pre requisites
-  ansible.builtin.include_tasks: mysql-schema.yml
+- name: install mysql
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: mysql-schema.yml
