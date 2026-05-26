@@ -9,6 +9,7 @@
     fruits_with_price:
       - { name: apple, price: 100 }
       - { name: banana, price: 200 }
+      - { name: orange, price: 600 }
   tasks:
     - name: copy
       copy:
