@@ -3,3 +3,7 @@ value of x - {{ x }}
 {% for fruit in fruits %}
   Fruit - {{ fruit }}
   {% endfor %}
+
+{% for fruit in fruits_with_price %}
+  Fruit Name - {{ fruit.name }} , {{ fruit.price }}
+  {% endfor %}
