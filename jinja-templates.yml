@@ -3,6 +3,12 @@
   connection: local
   vars:
     x: 100
+    fruits:
+      - apple
+      - banana
+    fruits_with_price:
+      - { name: apple, price: 100 }
+      - { name: banana, price: 200 }
   tasks:
     - name: copy
       copy:
