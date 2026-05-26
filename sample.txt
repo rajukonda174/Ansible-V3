@@ -2,4 +2,4 @@ value of x - {{ x }}
 
 {% for fruit in fruits %}
   Fruit - {{ fruit }}
-  {% end for %}
+  {% endfor %}
