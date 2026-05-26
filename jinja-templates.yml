@@ -6,6 +6,7 @@
     fruits:
       - apple
       - banana
+      - orange
     fruits_with_price:
       - { name: apple, price: 100 }
       - { name: banana, price: 200 }
