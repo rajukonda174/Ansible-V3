@@ -1,5 +1,5 @@
 - name: Jinja templates
-  host: localhost
+  hosts: localhost
   connection: local
   vars:
     x: 100
